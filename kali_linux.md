@@ -27,7 +27,7 @@ PermitRootLogin yes
 ```
 保存退出。<br>
 
-4.0 在打开ssh服务后，通过putty/xshell连接，若是连接不上，通过`service ssh status`命令查看状态，可以看到如下错误提示:<br>
+4.0 在打开ssh服务后，通过putty/xshell连接，若是连接不上，通过`service ssh status`命令查看状态，可以看到如下错误提示:
 <u><font style="color:red">kali-x sshd[1853]: Could not load host key: /etc/ssh/ssh_host_rsa_key...</font></u><br>
 那么，此时如果从客户端连接到服务器时是不会成功的。其原因是在 SSH 连接协议中需要有 RSA 或 DSA 密钥的鉴权。 因此，我们可以在服务器端使用 ssh-keygen 程序来生成一对公钥/私钥对。参考:[启动ssh服务时，提示Could not load host key: /etc/ssh/ssh_host_rsa_key](http://blog.csdn.net/hyholine/article/details/7362073)<br>
 ```shell
