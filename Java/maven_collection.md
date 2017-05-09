@@ -1,7 +1,7 @@
 ## Maven Problems Collections<br>
 记录在开发和使用中遇到的，看到的maven相关问题。<br>
 
-* **Fatal error compiling: 无效的目标发行版: 1.8 ->**<br>
+* **Fatal error compiling: 无效的目标发行版:1.8** <br>
   当在使用`maven build`编译一个maven工程时候，若是控制台输出类似如下错误信息:<br>
 ```shell
 Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) 
